@@ -1,0 +1,631 @@
+* {
+    font-family: var(--defFontFamily);
+    margin: 0;
+    padding: 0;
+}
+
+.yoga-session-main {
+    padding-top: 40px;
+    /* Space for fixed header */
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Back Link */
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #059669;
+    /* greenish from design */
+    font-weight: 400;
+    margin-bottom: 30px;
+    transition: transform 0.2s ease;
+}
+
+.back-link:hover {
+    transform: translateX(-5px);
+}
+
+.back-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Session Details Section */
+.session-details-section {
+    padding-bottom: 80px;
+}
+
+.session-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.session-info {
+    flex: 1;
+    max-width: 550px;
+}
+
+/* Badge */
+.level-badge.challenge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(254, 243, 198);
+    /* Light orange background */
+    color: #ea580c;
+    /* Orange text */
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.level-badge .badge-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.session-info h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.session-description {
+    font-size: 1.15rem;
+    color: #4b5563;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* Meta Info */
+.session-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.meta-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.meta-item span {
+    font-size: 1rem;
+    color: #374151;
+    font-weight: 400;
+}
+
+/* Buttons */
+.action-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary.btn-orange {
+    display: inline-block;
+    background-color: #ea580c;
+    /* Primary orange */
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(234, 88, 12, 0.2);
+}
+
+.btn-primary.btn-orange:hover {
+    background-color: #c2410c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(234, 88, 12, 0.3);
+}
+
+/* Hero Image */
+.session-image-wrapper {
+    flex: 1;
+    height: 500px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.session-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Current Leaderboard Section */
+.leaderboard-section {
+    padding: 60px 0 100px 0;
+    background-color: #f9fafb;
+    /* Light neutral background for contrast */
+}
+
+h2.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: #111;
+}
+
+.leaderboard-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fdfdfd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.leaderboard-header {
+    background-color: #ea580c;
+    /* Orange matching the theme */
+    color: #fff;
+    padding: 25px 40px;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.header-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.header-main h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.header-subtext {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Leaderboard Rows */
+.leaderboard-row {
+    display: flex;
+    align-items: center;
+    padding: 25px 40px;
+    border-bottom: 1px solid #fef3c7;
+    /* Light orange-yellowish border */
+    transition: background-color 0.2s ease;
+}
+
+.leaderboard-row:hover {
+    background-color: #fffbeb;
+}
+
+.leaderboard-row:last-child {
+    border-bottom: none;
+}
+
+.performer-rank {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 25px;
+    color: #fff;
+}
+
+.rank-1 {
+    background-color: #ea580c;
+}
+
+.rank-2 {
+    background-color: #94a3b8;
+}
+
+/* Grey-blue */
+.rank-3 {
+    background-color: #f97316;
+}
+
+/* Slightly lighter orange */
+.rank-4 {
+    background-color: #e5e7eb;
+    color: #4b5563;
+}
+
+.rank-5 {
+    background-color: #e5e7eb;
+    color: #4b5563;
+}
+
+.performer-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.performer-name {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #111;
+}
+
+.performer-subtext {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.performer-stat {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ea580c;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.view-all-link {
+    text-decoration: none;
+    color: #ea580c;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.view-all-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    padding: 80px 0;
+    background-color: #fffbeb;
+    /* Faint cream/yellow background */
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.step-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: #fef3c7;
+    /* Light yellow circle */
+    color: #d97706;
+    /* Amber/Orange number */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 auto 20px;
+}
+
+.step-item h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.step-item p {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .leaderboard-card {
+        max-width: 100%;
+    }
+
+    .steps-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .step-item {
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .leaderboard-header,
+    .leaderboard-row {
+        padding: 20px;
+    }
+
+    .performer-rank {
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+        font-size: 0.9rem;
+    }
+
+    .performer-name {
+        font-size: 1rem;
+    }
+
+    .stat-value {
+        font-size: 1.1rem;
+    }
+
+    .how-it-works-section {
+        padding: 60px 0;
+    }
+
+    .step-item {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+}
+
+/* Challenge Rules & Tips Section */
+.rules-tips-section {
+    padding: 80px 0 120px 0;
+    background-color: #fff;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.info-card {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 12px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rules-card {
+    background-color: #ecfdf5;
+    /* Light Green */
+}
+
+.tips-card {
+    background-color: #eff6ff;
+    /* Light Blue */
+}
+
+.info-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.rules-card .info-card-header h3 {
+    color: #065f46;
+    /* Dark Green */
+}
+
+.tips-card .info-card-header h3 {
+    color: #1e40af;
+    /* Dark Blue */
+}
+
+.info-card h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-list li {
+    font-size: 1rem;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+.rules-card .info-list li {
+    color: #064e3b;
+}
+
+.tips-card .info-list li {
+    color: #1e3a8a;
+}
+
+.info-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.rules-card .info-list li::before {
+    color: #10b981;
+}
+
+.tips-card .info-list li::before {
+    color: #3b82f6;
+}
+
+@media (max-width: 900px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Prizes & Recognition Section */
+.prizes-section {
+    padding: 80px 0 120px 0;
+    background-color: #fffbeb;
+    /* Faint cream ground to separate from rules */
+}
+
+.prizes-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.prize-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+    border-radius: 15px;
+    padding: 40px;
+    color: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.prize-card:hover {
+    transform: translateY(-10px);
+}
+
+.prize-card.gold {
+    background: linear-gradient(135deg, #facc15, #eab308);
+}
+
+.prize-card.silver {
+    background: linear-gradient(135deg, #94a3b8, #64748b);
+}
+
+.prize-card.bronze {
+    background: linear-gradient(135deg, #fb923c, #f97316);
+}
+
+.prize-card-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.prize-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.prize-card h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.prize-subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.prize-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.prize-list li {
+    font-size: 1rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.prize-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.prizes-footer-text {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.1rem;
+    color: #374151;
+}
+
+@media (max-width: 1100px) {
+    .prize-card {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .prize-card {
+        flex-basis: 100%;
+        padding: 30px 20px;
+    }
+
+    .prizes-section {
+        padding: 60px 0;
+    }
+}

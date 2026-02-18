@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Activities</title>
+    <link rel="stylesheet" href="/CSS/variables.css">
+    <link rel="stylesheet" href="/CSS/events&activities.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="main1">
+            <div class="main1-img">
+                <img src="/Assests/Images/calender.svg" alt="Calender">
+            </div>
+            <h1>Events & Activities</h1>
+            <h4>Join us for engaging events, workshops, and activities designed to promote health, wellness, and
+                community</h4>
+        </div>
+        <div class="main2">
+            <div class="main2-topic1">
+                <!-- <div class="stat-container"> -->
+                <div class="stat-item">
+                    <h1>50+</h1>
+                    <p>Annual Events</p>
+                </div>
+                <div class="stat-item">
+                    <h1>2000+</h1>
+                    <p>Total Participants</p>
+                </div>
+                <div class="stat-item">
+                    <h1>15</h1>
+                    <p>Partner Organizations</p>
+                </div>
+                <div class="stat-item">
+                    <h1>100%</h1>
+                    <p>Free Attendance</p>
+                </div>
+                <!-- </div> -->
+            </div>
+
+            <div class="main2-topic2" id="eventCalender">
+                <div class="calendar-header-text">
+                    <h1>Event Calendar</h1>
+                    <p>Stay updated with all our upcoming events and activities</p>
+                </div>
+
+                <div class="calendar-wrapper">
+                    <div class="calendar-controls">
+                        <h2>March 2026</h2>
+                        <div class="nav-arrows">
+                            <span>&lt;</span>
+                            <span>&gt;</span>
+                        </div>
+                    </div>
+
+                    <div class="calendar-grid">
+                        <!-- Days of Week -->
+                        <div class="day-name">Sun</div>
+                        <div class="day-name">Mon</div>
+                        <div class="day-name">Tue</div>
+                        <div class="day-name">Wed</div>
+                        <div class="day-name">Thu</div>
+                        <div class="day-name">Fri</div>
+                        <div class="day-name">Sat</div>
+
+                        <!-- Calendar Days -->
+                        <!-- Empty boxes for previous month days -->
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+
+                        <div class="calendar-day" style="background-color: #f3f4f6;">
+                            <span class="date">3</span>
+                            <div class="event-pill workshop">Yoga Session</div>
+                        </div>
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-day" style="background-color: #dbeafe;">
+                            <span class="date">6</span>
+                            <div class="event-pill meeting">Weekly Meeting</div>
+                        </div>
+                        <div class="calendar-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+
+                        <div class="calendar-day" style="background-color: #f3e8ff">
+                            <span class="date">10</span>
+                            <div class="event-pill workshop-alt">Meditation Workshop</div>
+                        </div>
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day">12</div>
+                        <div class="calendar-day" style="background-color: #dbeafe;">
+                            <span class="date">13</span>
+                            <div class="event-pill meeting">Weekly Meeting</div>
+                        </div>
+                        <div class="calendar-day">14</div>
+                        <div class="calendar-day major">
+                            <span class="date">15</span>
+                            <div class="event-text">Health Screening Camp</div>
+                        </div>
+                        <div class="calendar-day">16</div>
+
+                        <div class="calendar-day" style="background-color: #f3f4f6;">
+                            <span class="date">17</span>
+                            <div class="event-pill workshop">Yoga Session</div>
+                        </div>
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day">19</div>
+                        <div class="calendar-day major">
+                            <span class="date">20</span>
+                            <div class="event-text">Mental Health Workshop</div>
+                        </div>
+                        <div class="calendar-day">21</div>
+                        <div class="calendar-day">22</div>
+                        <div class="calendar-day">23</div>
+
+                        <div class="calendar-day" style="background-color: #f3f4f6;">
+                            <span class="date">24</span>
+                            <div class="event-pill workshop">Yoga Session</div>
+                        </div>
+                        <div class="calendar-day major">
+                            <span class="date">25</span>
+                            <div class="event-text">Blood Donation Drive</div>
+                        </div>
+                        <div class="calendar-day">26</div>
+                        <div class="calendar-day" style="background-color: #dbeafe;">
+                            <span class="date">27</span>
+                            <div class="event-pill meeting">Weekly Meeting</div>
+                        </div>
+                        <div class="calendar-day major">
+                            <span class="date">28</span>
+                            <div class="event-text">Fitness Challenge</div>
+                        </div>
+                        <div class="calendar-day">29</div>
+                        <div class="calendar-day">30</div>
+
+                        <div class="calendar-day" style="background-color: #f3f4f6;">
+                            <span class="date">31</span>
+                            <div class="event-pill workshop">Yoga Session</div>
+                        </div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                        <div class="calendar-day empty"></div>
+                    </div>
+
+                    <div class="calendar-legend">
+                        <div class="legend-item"><span class="dot major"></span>Major Events</div>
+                        <div class="legend-item"><span class="dot workshop"></span>Workshops</div>
+                        <div class="legend-item"><span class="dot meeting"></span>Weekly Meetings</div>
+                        <div class="legend-item"><span class="dot recurring"></span>Recurring Activities</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main2-topic3">
+                <div class="topic3-header">
+                    <h1>Upcoming Events</h1>
+                    <p>Register now for our upcoming events and be part of the wellness movement</p>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <span class="event-status">Health Camp</span>
+                        <img src="/Assests/Images/bp checker.jpg" alt="Health Screening Camp">
+                    </div>
+                    <div class="event-details">
+                        <div class="event-title-row">
+                            <div class="icon-box">
+                                <!-- Using a simple unicode or placeholder if svg not available, or standard icon -->
+                                <img src="/Assests/Images/sthethiscope.svg" alt="sthethiscope"
+                                    style="width: 24px; height: 24px;">
+                            </div>
+                            <div class="title-text">
+                                <h2>Free Health Screening Camp</h2>
+                                <p>Free health screenings including blood pressure, BMI, vision tests, and consultations
+                                    with healthcare professionals.</p>
+                            </div>
+                        </div>
+
+                        <div class="event-info-grid">
+                            <div class="info-item">
+                                <img src="/Assests/Images/calender.svg" alt="Date">
+                                <span>March 15, 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/clock.svg" alt="Time">
+                                <span>9:00 AM - 3:00 PM</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/location.svg" alt="Location">
+                                <span>Block-E Parking Spot</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/communitySupport.svg" alt="Registered">
+                                <span>120 registered</span>
+                            </div>
+                        </div>
+
+                        <div class="event-actions">
+                            <button class="btn-register" onclick="scrollToRegister()">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <span class="event-status workshop">Workshop</span>
+                        <!-- Using a different image for the second card -->
+                        <img src="/Assests/Images/man holding mic.jpg" alt="Mental Health Awareness Workshop">
+                    </div>
+                    <div class="event-details">
+                        <div class="event-title-row">
+                            <div class="icon-box workshop">
+                                <img src="/Assests/Images/purple-brain.svg" alt="Mental Health"
+                                    style="width: 24px; height: 24px;">
+                            </div>
+                            <div class="title-text">
+                                <h2>Mental Health Awareness Workshop</h2>
+                                <p>Interactive workshop on recognizing mental health challenges, coping strategies, and
+                                    available campus resources.</p>
+                            </div>
+                        </div>
+
+                        <div class="event-info-grid">
+                            <div class="info-item">
+                                <img src="/Assests/Images/calender.svg" alt="Date">
+                                <span>March 20, 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/clock.svg" alt="Time">
+                                <span>5:00 PM - 7:00 PM</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/location.svg" alt="Location">
+                                <span>Seminar Hall Block-A</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/communitySupport.svg" alt="Registered">
+                                <span>85 registered</span>
+                            </div>
+                        </div>
+
+                        <div class="event-actions">
+                            <button class="btn-register" onclick="scrollToRegister()">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <span class="event-status blood">Blood Drive</span>
+                        <img src="/Assests/Images/blood donation.jpg" alt="Spring Blood Donation Drive">
+                    </div>
+                    <div class="event-details">
+                        <div class="event-title-row">
+                            <div class="icon-box blood">
+                                <img src="/Assests/Images/blood.svg" alt="Blood Drive"
+                                    style="width: 24px; height: 24px;">
+                            </div>
+                            <div class="title-text">
+                                <h2>Spring Blood Donation Drive</h2>
+                                <p>Help save lives! Partner with local blood bank for our semester blood donation drive.
+                                    Walk-ins welcome.</p>
+                            </div>
+                        </div>
+
+                        <div class="event-info-grid">
+                            <div class="info-item">
+                                <img src="/Assests/Images/calender.svg" alt="Date">
+                                <span>March 25, 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/clock.svg" alt="Time">
+                                <span>10:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/location.svg" alt="Location">
+                                <span>Block-E Parking Spot</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/communitySupport.svg" alt="Registered">
+                                <span>150 registered</span>
+                            </div>
+                        </div>
+
+                        <div class="event-actions">
+                            <button class="btn-register" onclick="scrollToRegister()">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <span class="event-status fitness">Fitness Challenge</span>
+                        <img src="/Assests/Images/bicycle race.jpg" alt="Fitness Challenge">
+                    </div>
+                    <div class="event-details">
+                        <div class="event-title-row">
+                            <div class="icon-box fitness">
+                                <img src="/Assests/Images/trophy.svg" alt="Fitness" style="width: 24px; height: 24px;">
+                            </div>
+                            <div class="title-text">
+                                <h2>30-Day Fitness Challenge Kickoff</h2>
+                                <p>Join our monthly fitness challenge! Get your tracker, meet your team, and start your
+                                    journey to better health.</p>
+                            </div>
+                        </div>
+
+                        <div class="event-info-grid">
+                            <div class="info-item">
+                                <img src="/Assests/Images/calender.svg" alt="Date">
+                                <span>March 28, 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/clock.svg" alt="Time">
+                                <span>6:00 PM - 7:30 PM</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/location.svg" alt="Location">
+                                <span>Maitidevi PlayGround</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/communitySupport.svg" alt="Registered">
+                                <span>95 registered</span>
+                            </div>
+                        </div>
+
+                        <div class="event-actions">
+                            <button class="btn-register" onclick="scrollToRegister()">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <span class="event-status">Awareness Seminar</span>
+                        <img src="/Assests/Images/men giving lecture.jpg" alt="Nutrition Seminar">
+                    </div>
+                    <div class="event-details">
+                        <div class="event-title-row">
+                            <div class="icon-box">
+                                <img src="/Assests/Images/heart.svg" alt="Nutrition" style="width: 24px; height: 24px;">
+                            </div>
+                            <div class="title-text">
+                                <h2>Nutrition & Healthy Eating Seminar</h2>
+                                <p>Learn about balanced nutrition, meal planning on a budget, and sustainable eating
+                                    habits with our guest nutritionist.</p>
+                            </div>
+                        </div>
+
+                        <div class="event-info-grid">
+                            <div class="info-item">
+                                <img src="/Assests/Images/calender.svg" alt="Date">
+                                <span>April 5, 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/clock.svg" alt="Time">
+                                <span>4:00 PM - 6:00 PM</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/location.svg" alt="Location">
+                                <span>Seminar Hall Block-A</span>
+                            </div>
+                            <div class="info-item">
+                                <img src="/Assests/Images/communitySupport.svg" alt="Registered">
+                                <span>110 registered</span>
+                            </div>
+                        </div>
+
+                        <div class="event-actions">
+                            <button class="btn-register" onclick="scrollToRegister()">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="main3">
+            <div class="topic3-header">
+                <h1>Event Categories</h1>
+                <p>We organize diverse events to support every aspect of your wellness journey</p>
+            </div>
+
+            <div class="categories-grid">
+                <!-- Card 1: Health Camps (Green) -->
+                <div class="category-card">
+                    <div class="icon-box-small green">
+                        <img src="/Assests/Images/sthethiscope.svg" alt="Health">
+                    </div>
+                    <h3>Health Camps</h3>
+                    <p>Free health screenings, medical consultations, and preventive care services</p>
+                    <ul class="check-list">
+                        <li><img src="/Assests/Images/circle-tik.svg" alt="check"> Blood pressure checks</li>
+                        <li><img src="/Assests/Images/circle-tik.svg" alt="check"> BMI assessments</li>
+                        <li><img src="/Assests/Images/circle-tik.svg" alt="check"> Vision & hearing tests</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Workshops (Purple) -->
+                <div class="category-card">
+                    <div class="icon-box-small purple">
+                        <img src="/Assests/Images/purple-brain.svg" alt="Workshops">
+                    </div>
+                    <h3>Workshops</h3>
+                    <p>Interactive sessions on mental health, nutrition, fitness, and lifestyle management</p>
+                    <ul class="check-list">
+                        <li><img src="/Assests/Images/purple-circle-tik.svg" alt="check"> Skill-building activities</li>
+                        <li><img src="/Assests/Images/purple-circle-tik.svg" alt="check"> Expert-led discussions</li>
+                        <li><img src="/Assests/Images/purple-circle-tik.svg" alt="check"> Hands-on practice</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Awareness Seminars (Blue) -->
+                <div class="category-card">
+                    <div class="icon-box-small blue">
+                        <img src="/Assests/Images/bell.svg" alt="Seminars">
+                    </div>
+                    <h3>Awareness Seminars</h3>
+                    <p>Educational sessions on important health topics and wellness trends</p>
+                    <ul class="check-list">
+                        <li><img src="/Assests/Images/blue-circle-tik.svg" alt="check"> Guest speakers</li>
+                        <li><img src="/Assests/Images/blue-circle-tik.svg" alt="check"> Panel discussions</li>
+                        <li><img src="/Assests/Images/blue-circle-tik.svg" alt="check"> Q&A sessions</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4: Fitness Challenges (Orange) -->
+                <div class="category-card">
+                    <div class="icon-box-small orange">
+                        <img src="/Assests/Images/trophy.svg" alt="Fitness">
+                    </div>
+                    <h3>Fitness Challenges</h3>
+                    <p>Motivating competitions to build healthy habits and stay active</p>
+                    <ul class="check-list">
+                        <li><img src="/Assests/Images/orange-circle-tik.svg" alt="check"> Team competitions</li>
+                        <li><img src="/Assests/Images/orange-circle-tik.svg" alt="check"> Progress tracking</li>
+                        <li><img src="/Assests/Images/orange-circle-tik.svg" alt="check"> Prizes & recognition</li>
+                    </ul>
+                </div>
+
+                <!-- Card 5: Blood Donation Drives (Red) -->
+                <div class="category-card">
+                    <div class="icon-box-small red">
+                        <img src="/Assests/Images/blood.svg" alt="Blood Drive">
+                    </div>
+                    <h3>Blood Donation Drives</h3>
+                    <p>Life-saving initiatives in partnership with local blood banks</p>
+                    <ul class="check-list">
+                        <li><img src="/Assests/Images/red-circle-tik.svg" alt="check"> Safe procedures</li>
+                        <li><img src="/Assests/Images/red-circle-tik.svg" alt="check"> Professional staff</li>
+                        <li><img src="/Assests/Images/red-circle-tik.svg" alt="check"> Refreshments provided</li>
+                    </ul>
+                </div>
+
+                <!-- Card 6: Wellness Drives (Teal) -->
+                <div class="category-card">
+                    <div class="icon-box-small teal">
+                        <img src="/Assests/Images/heart.svg" alt="Wellness">
+                    </div>
+                    <h3>Wellness Drives</h3>
+                    <p>Campus-wide initiatives promoting healthy living and self-care</p>
+                    <ul class="check-list">
+                        <li><img src="/Assests/Images/circle-tik.svg" alt="check"> Resource distribution</li>
+                        <li><img src="/Assests/Images/circle-tik.svg" alt="check"> Community activities</li>
+                        <li><img src="/Assests/Images/circle-tik.svg" alt="check"> Awareness campaigns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main4">
+            <div class="topic4-header">
+                <h1>Register for an Event</h1>
+                <p>Fill out the form below to register for any of our upcoming events</p>
+            </div>
+
+            <div class="registration-container" id="eventRegister">
+                <div class="form-frame">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSduOXn6xqrg9MJOBbGtbFqAVrVTaX0pYrW_7Lgy_HUKlAbVYw/viewform?embedded=true">Loading…</iframe>
+                </div>
+                <div class="registration-footer">
+                    <p>Questions about registration? <a href="/HTML/contactUs.html">Contact us</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main5">
+            <div class="topic5-header">
+                <h1>Past Events</h1>
+                <p>Check out some of our recent successful events and activities</p>
+            </div>
+
+            <div class="past-events-grid">
+                <!-- Card 1 -->
+                <div class="past-card">
+                    <div class="past-card-header">
+                        <img src="/Assests/Images/circle-tik.svg" alt="Success">
+                        <h3>Winter Wellness Festival</h3>
+                    </div>
+                    <p class="event-date">February 10, 2026</p>
+                    <p class="event-desc">Yoga demonstrations, healthy food tastings, wellness booths</p>
+                    <div class="past-card-footer">
+                        <img src="/Assests/Images/communitySupport.svg" alt="Attendees">
+                        <span>200 attendees</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="past-card">
+                    <div class="past-card-header">
+                        <img src="/Assests/Images/circle-tik.svg" alt="Success">
+                        <h3>Stress Management Workshop</h3>
+                    </div>
+                    <p class="event-date">January 28, 2026</p>
+                    <p class="event-desc">Breathing techniques, time management strategies, Q&A session</p>
+                    <div class="past-card-footer">
+                        <img src="/Assests/Images/communitySupport.svg" alt="Attendees">
+                        <span>95 attendees</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="past-card">
+                    <div class="past-card-header">
+                        <img src="/Assests/Images/circle-tik.svg" alt="Success">
+                        <h3>New Year Fitness Bootcamp</h3>
+                    </div>
+                    <p class="event-date">January 8, 2026</p>
+                    <p class="event-desc">4-week intensive program, nutrition coaching, fitness assessments</p>
+                    <div class="past-card-footer">
+                        <img src="/Assests/Images/communitySupport.svg" alt="Attendees">
+                        <span>120 attendees</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main6">
+            <div class="main6-content">
+                <img src="/Assests/Images/bell.svg" alt="Bell" class="main6-icon">
+                <h2>Stay Updated on Events</h2>
+                <p>Never miss an event! Join our community and get notifications about upcoming activities, workshops,
+                    and wellness drives.</p>
+                <button class="btnBecomeMember" onclick="window.location.href='/HTML/becomeMember.html#becomeMember'">Become a Member</button>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script src="/JavaScript/headerFooter.js"></script>
+    <script src="/JavaScript/event&Activities.js"></script>
+    <script src="/JavaScript/scroll-to-top.js"></script>
+
+</body>
+
+</html>
