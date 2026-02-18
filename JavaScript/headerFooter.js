@@ -9,7 +9,7 @@
 
 // Determine base path dynamically
 const basePath = window.location.pathname.includes("/FDD-Assignment-Team6/")
-  ? "/FDD-Assignment-Team6/"
+  ? "/testing-path/"
   : "/";
 
 // Load header
