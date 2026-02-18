@@ -1,0 +1,448 @@
+/* Global Settings */
+* {
+    font-family: var(--defFontFamily);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.yoga-session-main {
+    padding-top: 40px;
+    padding-bottom: 0;
+    min-height: 80vh;
+    display: block;
+    width: 100%;
+}
+
+.content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.session-details-section {
+    padding: 40px 0;
+}
+
+/* Back Link */
+.back-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: rgb(15, 140, 100);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: transform 0.2s ease;
+    align-self: flex-start;
+}
+
+.back-link:hover {
+    transform: translateX(-5px);
+}
+
+/* Session Details Layout */
+.session-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background-color: #fff;
+    padding-bottom: 60px;
+}
+
+/* Left Column: Info */
+.session-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+/* Level Badge */
+.level-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    width: fit-content;
+}
+
+.level-badge.high-intensity {
+    background-color: rgb(255, 237, 212);
+    /* Light orange */
+    color: rgb(202, 53, 0);
+    /* Dark orange */
+}
+
+.level-badge img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Typography */
+.session-info h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #111;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.session-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+
+/* Meta Information List */
+.session-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.meta-item img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Green filter for meta icons to match previous pages */
+.green-icon {
+    filter: invert(41%) sepia(87%) saturate(399%) hue-rotate(94deg) brightness(97%) contrast(92%);
+}
+
+/* Right Column: Image */
+.session-image-wrapper {
+    flex: 1;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.session-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    .session-details-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    .session-image-wrapper {
+        height: 300px;
+        order: -1;
+    }
+
+    .session-info {
+        max-width: 100%;
+    }
+
+    .session-info h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .action-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+
+    .session-info h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Sample Workout Structure Section */
+.structure-section {
+    padding: 60px 0;
+    width: 100%;
+    /* background-color: #fffaf5; */
+    /* Very light orange background */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.structure-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px;
+    background-color: rgb(255, 246, 239);
+    border-radius: 15px;
+}
+
+.phase-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.phase-card.highlighted {
+    border: 2px solid #ea580c;
+}
+
+.phase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.phase-title-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.phase-title-group img {
+    width: 24px;
+    height: 24px;
+}
+
+.phase-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #111;
+}
+
+.phase-duration {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.phase-desc {
+    font-size: 1.1rem;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* Exercise List inside HIIT Rounds */
+.exercise-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.exercise-list li {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.exercise-list img {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.exercise-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.exercise-name {
+    font-size: 1.1rem;
+    color: #111;
+    font-weight: 400;
+}
+
+.exercise-sub {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+@media (max-width: 768px) {
+    .structure-container {
+        padding: 0 15px;
+    }
+
+    .phase-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .phase-duration {
+        align-self: flex-end;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Why HIIT Works Section */
+.benefits-summary-section {
+    padding: 60px 0;
+    width: 100%;
+    background-color: rgb(255, 252, 243);
+    /* Light beige/cream background */
+}
+
+.benefits-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.benefit-summary-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-summary-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    width: 45px;
+    height: 45px;
+}
+
+.benefit-summary-card h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #111;
+}
+
+.benefit-summary-card p {
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .benefits-summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .benefits-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-summary-card {
+        padding: 25px;
+    }
+}
+
+/* Tips for Success Section */
+.tips-section {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.tips-container {
+    background: linear-gradient(to right, #f0fdf4, #eff6ff);
+    /* Light green to light blue gradient */
+    border-radius: 20px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.tips-column h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 25px;
+}
+
+.tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tips-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1rem;
+    color: #374151;
+}
+
+.tips-list img {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+/* Green filter for the first column's icons */
+.icon-green {
+    filter: invert(41%) sepia(87%) saturate(399%) hue-rotate(94deg) brightness(97%) contrast(92%);
+}
+
+@media (max-width: 900px) {
+    .tips-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tips-list li {
+        font-size: 1rem;
+    }
+
+    .tips-column h3 {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,21 @@
+:root{
+    --defBackColor: #fefefe;
+    --defTextColor: #3d7c9e;
+    --defBtnHeight: 50px;
+    --defBtnRadius: 15px;
+    --defBoxPadding: 15px;
+    --defMargin: 20px;
+    --defPadding:30px;
+    --defFontFamily: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --defSFont: 1.25rem;
+    --defMFont: 1.5rem;
+    --defLFont: 1.875rem;
+    --defXLFont: 2rem;
+    --defXLLFont: 2.2rem;
+    --defXLLFont: 2.5rem;
+    --defXXLFont: 3rem;
+    --defXXXLFont: 3.5rem;
+    --defHdFontWeight: 500;
+    --defHdSFontWeight: 400;
+    --defBoRa: 25px;
+}
