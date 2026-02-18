@@ -10,7 +10,7 @@
 .main1{
     width: 100%;
     height: 500px;
-    background-image: linear-gradient(rgba(0, 255, 102, 0.271)),url(../Assests/Images/bg-image.png);
+    background-image: linear-gradient(rgba(0, 255, 102, 0.271)),url(../Assets/Images/bg-image.png);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,7 +167,7 @@
     left: 25px;
 }
 .box3-1 .image1{
-    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.001)),url("../Assests/Images/main3-box3-1.jpg");
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.001)),url("../Assets/Images/main3-box3-1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@
     border-bottom-right-radius: 0px;
 }
 .box3-2 .image2{
-    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.001)),url("../Assests/Images/main3-box3-2.jpg");
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.001)),url("../Assets/Images/main3-box3-2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -185,7 +185,7 @@
     border-bottom-right-radius: 0px;
 }
 .box3-3 .image3{
-    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.001)),url("../Assests/Images/main3-box3-3.jpg");
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.001)),url("../Assets/Images/main3-box3-3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,7 +194,7 @@
     border-bottom-right-radius: 0px;
 }
 .box3-4 .image4{
-    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.001)),url("../Assests/Images/main3-box3-4.jpg");
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.66),rgba(0, 0, 0, 0.001)),url("../Assets/Images/main3-box3-4.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
